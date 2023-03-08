@@ -32,10 +32,11 @@ const dibujarNaruto = () => {
         narugod.querySelector('img').setAttribute('src', item.image)
         narugod.querySelector('h1').textContent = item.title
         narugod.querySelector('p').textContent = item.synopsis
-        narugod.getElementById('estatus').textContent = item.status
+        narugod.getElementById('estatus').textContent = ('Estatus: ')+item.status
 
         const clone = narugod.cloneNode(true)
         fragment.appendChild(clone)
     })
     naruto.appendChild(fragment)
 }
+

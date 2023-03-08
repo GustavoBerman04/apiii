@@ -1,0 +1,27 @@
+body{
+    background-color: aqua;
+}
+
+img {
+    width: 80%;
+    display: inline-flex;
+
+}
+
+#sinop{
+    font-family: roboto;
+    font-size: small;
+    width: 50%;
+    text-align: justify;
+    
+}
+
+h1{
+    width: 20%;
+    font-size: medium;
+}
+
+#naruto{
+    display: flex;
+    width: 100%;
+}
