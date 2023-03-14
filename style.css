@@ -2,11 +2,15 @@ body{
     background-color: rgb(80, 156, 156);
 }
 
-.imag{
-width: 150px;
-height: 250px;
-transition: 1s;
-margin: 30px;
+header{
+    padding: 2%;
+    background-color: rgb(195, 148, 238);
+}
+
+#imagen{
+    width: 200px;
+    height: 400px;
+    margin: 30px;
 }
 
 
