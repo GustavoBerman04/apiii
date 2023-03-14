@@ -49,7 +49,7 @@ h1{
 }
 
 .main{
-    width: 700px;
+    width: 42%;
     background-color: aqua;
     display: flex;
 }

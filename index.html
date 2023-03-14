@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>api anime</title>
+    <title>Document</title>
 </head>
 <body>
-
-    <div class="main">
-        <div class="naruto" id="naruto">
-
-            <template id="narugod">
-                <div class="caja">
-                    <img src="" alt="" class="imag">
-                    <h1>Naruto</h1>
-                    <p id="sinop">Sinopsis</p>
-                    <p id="estatus">Estatus</p>
-                </div>
-            </template>
-            </div>
+    
+    <div class="info" id="info">
+        <label for="buscarAnime">Busca un anime</label>
+            <input type="text" class="buscar" id="buscarAnime">
+            <button onclick="buscarInfo()">Buscar</button>
+        <template class="tempInfo" id="tempInfo">
+            <img src="" alt="">
+            
+            <h1 class="titulo"></h1>
+            <p class="episodios"></p>
+            <p class="estatus"></p>
+            <p class="fecha"></p>
+            <p class="calif"></p>
+        </template>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>
