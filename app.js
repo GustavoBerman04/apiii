@@ -3,6 +3,7 @@ const tempInfo = document.getElementById('tempInfo').content
 const fragment = document.createDocumentFragment()
 const boton = document.getElementById('boton')
 const refre = document.getElementById('refrescar')
+const epi = document.getElementById('episodios')
 
 let todo = []
 
@@ -29,8 +30,8 @@ const buscarInfo = () => {
             method: 'POST',
             headers: {
                 'content-type': 'application/x-www-form-urlencoded',
-		        'X-RapidAPI-Key': 'ba82d75bd7msh5b317582283385bp14c5eajsn6d117bf1b3c8',
-		        'X-RapidAPI-Host': 'anime52.p.rapidapi.com'
+                'X-RapidAPI-Key': '4ac7eef972mshd280279a7778566p1c828cjsnb6b84c68dbf6',
+                'X-RapidAPI-Host': 'anime52.p.rapidapi.com'
             },
             body: encodedParams
             };
@@ -56,6 +57,12 @@ const dibujarInfo = () => {
     todo.forEach((item) => {
         tempInfo.querySelector('img').setAttribute('src', item.poster)
         tempInfo.querySelector('h1').textContent = item.title
+        tempInfo.getElementById('episodios').textContent = ('Episodios: ') + item.episodes
+        tempInfo.getElementById('estatus').textContent = ('Estado: ') + item.status
+        tempInfo.getElementById('fecha').textContent = ('Fecha de lanzamiento: ') + item.year
+        tempInfo.getElementById('calif').textContent = ('Calificación: ') + item.score
+        tempInfo.getElementById('tipo').textContent = ('Tipo: ') + item.type
+        tempInfo.getElementById('temporada').textContent = ('Temporada de estreno: ') + item.season
 
         const clone = tempInfo.cloneNode(true)
         fragment.appendChild(clone)

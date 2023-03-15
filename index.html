@@ -11,21 +11,29 @@
     <header><label for="buscarAnime">Busca un anime</label>
         <input type="text" class="buscar" id="buscarAnime">
         <button id="boton">Buscar</button>
-        <botton id="refrescar">Busca otro anime</botton></header>
+        <button id="refrescar">Buscar otro anime</button>
+    </header>
+
+<div class="main">
 
     <div class="info" id="info">
         
         
         <template class="tempInfo" id="tempInfo">
-            <img id="imagen" src="" alt="">
-            
-            <h1 class="titulo"></h1>
-            <p class="episodios"></p>
-            <p class="estatus"></p>
-            <p class="fecha"></p>
-            <p class="calif"></p>
+            <div class="separado">
+                <img id="imagen" src="" alt="">
+                
+                <h1 class="titulo"></h1>
+                <p id="episodios"></p>
+                <p id="estatus"></p>
+                <p id="tipo"></p>
+                <p id="fecha"></p>
+                <p id="temporada"></p>
+                <p id="calif"></p>
+            </div>
         </template>
     </div>
+</div>
 
     <script src="app.js"></script>
 </body>
