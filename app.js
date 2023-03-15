@@ -30,7 +30,7 @@ const buscarInfo = () => {
             method: 'POST',
             headers: {
                 'content-type': 'application/x-www-form-urlencoded',
-                'X-RapidAPI-Key': '4ac7eef972mshd280279a7778566p1c828cjsnb6b84c68dbf6',
+                'X-RapidAPI-Key': 'ddb65795bemshb511bd669a7e643p1f5c41jsnc0232d3eba18',
                 'X-RapidAPI-Host': 'anime52.p.rapidapi.com'
             },
             body: encodedParams
